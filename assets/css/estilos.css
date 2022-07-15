@@ -1,0 +1,87 @@
+:root{
+    --tipografia-facebook:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --color-azul-faceboo:#166fe5;
+    --color-verde-facebook: #42b72a;
+    --color-gris-facebook:#f0f2f5;
+    --color-blanco:#fff;
+    --color-negro:#000;
+    --color-azul:#159cf6;
+    --color-azul-facebook-hover: #1c0df6;
+}
+
+*{
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0f2f5;
+    
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    padding: 14px 16px;
+    
+    
+
+}
+
+.btn-incio-sesion{
+    width: 332px;
+    height: 52px;
+    background-color:var(--color-azul-faceboo);
+    color:var(--color-gris-facebook);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    transition: all ;
+}
+
+.olvide-contrasena{
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-crear-cuenta-nueva{
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color:var(--color-verde-facebook);
+    color: var(--color-blanco);
+    margin: auto;
+}
+
+
+.seccion1{
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 549px;
+
+img{
+    width: 300px;
+}
+
+.seccion2{
+    margin: 155px;
+    padding: 11px;
+    text-align: -webkit-center;
+    background-color: #fff;
+    width: 50%;
+}
+
+input{
+    display: inline;
+}
