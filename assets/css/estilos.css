@@ -1,87 +1,117 @@
 :root{
     --tipografia-facebook:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-    --color-azul-faceboo:#166fe5;
+    --color-azul-facebook:#1877f2;;
     --color-verde-facebook: #42b72a;
     --color-gris-facebook:#f0f2f5;
     --color-blanco:#fff;
     --color-negro:#000;
     --color-azul:#159cf6;
-    --color-azul-facebook-hover: #1c0df6;
+    --color-azul-facebook-hover: #166fe5;
+    --color-verde-facebbok-hover:#36a420;
 }
 
+body{
+    background-color: var(--color-gris-facebook);
+}
+
+
 *{
-    margin: 5px;
-    padding: 10px;
-    background-color: #f0f2f5;
-    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .contenedor{
-    display: flex;
-    justify-content: space-evenly;
-    
-    
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 100vh;
 }
 
 .formulario{
     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 17px;
-    padding: 14px 16px;
-    
-    
-
+    align-items: center;
 }
 
-.btn-incio-sesion{
-    width: 332px;
-    height: 52px;
-    background-color:var(--color-azul-faceboo);
-    color:var(--color-gris-facebook);
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 6px;
+.btn-inicio-sesion,
+.btn-crear-cuenta-nueva{
     border: none;
-    transition: all ;
+    font-weight: bold;
+    color: var(--color-blanco);
+    font-size: 20px;
+    border-radius: 6px;
+    transition: all 200ms;
 }
 
-.olvide-contrasena{
-    color: #1877f2;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
+
+
+.btn-inicio-sesion{
+    height: 52px;
+    width: 332px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0px 16px;
+    border-radius: 6px;
+    background-color:var(--color-azul-facebook);
+    border: none;
+    font-weight: bold;
+    color: var(--color-blanco);
+    transition: all 200ms;
+}
+
+.btn-inicio-sesion:hover{
+    background-color: var(--color-azul-facebook-hover);
+}
+
+.seccion1,
+.seccion2,
+.fondo-blanco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion2,
+.fondo-blanco{
+    flex-direction: column;
+}
+
+.fondo-blanco{
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 20px;
+    border-radius: 6px;
+}
+.separador{
+    border-top: 1px solid #9c9c9e;
+    margin: 30px 0;
+    width: 80%;
+
+}
+
+.olvide{
+    padding: 20px 0 0;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"]{
+    padding: 14px 16px;
+    width: 330px;
+    outline: 1px solid var(--color-gris-facebook);
+    margin: 4px 0;
+}
+
+.formulario input:focus-visible{
+    border: 1px solid var(--color-azul-facebook);
 }
 
 .btn-crear-cuenta-nueva{
-    border: none;
-    border-radius: 6px;
-    font-size: 17px;
-    line-height: 48px;
-    padding: 0 16px;
-    background-color:var(--color-verde-facebook);
-    color: var(--color-blanco);
-    margin: auto;
-}
-
-
-.seccion1{
-    font-family: sans-serif;
-    font-size: 13px;
-    width: 549px;
-
-img{
-    width: 300px;
-}
-
-.seccion2{
-    margin: 155px;
-    padding: 11px;
-    text-align: -webkit-center;
-    background-color: #fff;
-    width: 50%;
-}
-
-input{
-    display: inline;
+    background-color: var(--color-verde-facebbok-hover);
+    width: 190px;
+    height: 50px;
+    
 }
